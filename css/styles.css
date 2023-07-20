@@ -36,10 +36,10 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
 }
 
 .wrap{/*Se utiliza para indicar que se aplixaran estilos en la clase wrap */
-    width: 1200px;/*Se aplica un ancho de la pagina de 1200px*/
+    width: 1250px;/*Se aplica un ancho de la pagina de 1200px*/
     margin: 0px auto;/*Se aplica un margin de 0px e los cuatro costados de la pagina */
 }
-.gear{/*Se utiliza para indicar que se aplicaran estilos a la clase gear*/
+.gear, .icon{/*Se utiliza para indicar que se aplicaran estilos a la clase gear*/
     font-family:"WebSymbolsRegular";/*Se aplica una familia se simbolos */
 }
 
@@ -115,7 +115,7 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
 
 /*BANNER*/
 #banner{ /*Se utiliza el id del banner para indicar que se plantaran estilos */
-    width: 95%; /*Se utilizara un 95% del ancho del elemento*/
+    width: 96%; /*Se utilizara un 95% del ancho del elemento*/
     height: 100px; /*tendra una altura de 100px*/
     border: 10px solid white; /*Se definen los bordes de 10px solidos y de tono blanco*/
     box-shadow: 0px 0px 2px gray; /*Se pone un efecto de sombras en el elemento*/
@@ -136,6 +136,47 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
    margin: 27px auto; /*El elemnto tendra un margen de 27px */
 
 }
+/*TARJETAS*/
+.card{/*Se utiliza para indicar los estilos que aplicaremops en la clase card*/
+    float:left;/*se utiliza para indicar quye se flotara al lado izquierdo*/
+    width: 206px;/*definios el porcentaje dle ancho que se dese para elemento*/
+    height: 305px;/*Se utiliza para definir el alto que tendra el elemento*/
+    border: 1px solid #ccc;/*se utiliza para indicar los bordes del elento y se aplica un tono blanco en sus cuatro costados */
+    box-shadow: 1px 1px 2px #ddd;/*Se utiliza para definir el sombreado que tendra el elemento*/
+    background: white;/*Se define el color de fondo*/
+    overflow:hidden;/*Se utiliza para que no permiete que se salgan los elementos del bloque y se vea desordenado*/
+    margin: 16px; /*Se aplicara una ,argen de 16px en los cuatro costados del elemento*/
+    margin-top: 40px;/*Se utilizara una margen superior de 40px */
+    cursor:pointer;/*Se aplica para cuando el cursor se ponga sobre el elemnto este cambie de puntero aa selector*/
+
+}
+.card .icon{ /*Indicamos los estilos que se aplicaran a las clases card y icon*/
+    display: block;/*Se manejaran como lementos de caja y se utilizara todo su ancho y alto*/
+    width: 100%;/*Se apliacra el el uso del 100% del elemento*/
+    height: 130px;/*Tendra una altura el elemto de 130px*/
+    font-size: 50px;/*El tamaño de la letra sera de 50px*/
+    line-height: 110px;/*Se utiliza para poner el espacio entre lines dentro del elemento a lo lato de la caja     */
+    text-align: center; /*indicamos que el texto se centrara*/
+    margin: auto;/*El lemnto tendra una margenautomatica en  sus cuatro costados*/
+}
+
+.card .category{/*incamos que se aplicaran estilos a las clases card y category*/
+    width: 100%;/*El lemnto tendra un acbho del 100%*/
+    height: 50px;/*El elemento tendra un alto de 50px*/
+    font-family: "TrebuchetMS";/*se define elestilo de letra que se aplicara al elemento*/
+    font-size: 21px;/*Se aplicara un tamos a la letra de 21px*/
+    font-weight:bold;/*Indicamos que es peso de la letra sera en negrita*/
+    text-align: center;/*lo utilizamos para indicar que el texto sera centrado */
+    color: #00538c;/*este es el color que se apliocara al elemento*/
+}
+
+.card .description{/*Se degine que se aplicara estilos a las calses card y description*/
+    font-family: "TrebuchetMS";/*Se indica el tipo de ltetra que aplicara*/
+    text-align: center;/*Se centrara el texto*/
+    color: hsl(204, 83%, 45%);/*aplicamos un color al elemnto*/
+    font-size: 15px;/*el tamaño de la letra sera de 15px*/
+}
+
 
 
 
