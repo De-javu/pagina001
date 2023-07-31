@@ -291,8 +291,38 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
     margin-left: 18px;/*Se utilizara una margen a la izquerda de 18px*/
     margin-top: 25px;/*indica que la margen superior tendra un espacio de 25px*/
     font-size: 20px;/*Indica que la letra tendra un tamaño de 20px*/
+}
+
+#login input[type="submit"],
+#login input[type="button"],
+#login input[type="reset"],
+#login button{
+    /*display: block;*/
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+    border: 1px solid #156785;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size:15px;
+    font-family: "TrebechetMS";
+    font-weight: lighter;
+    margin-left: 17px;
+    transition: all 300ms;
 
 }
+
+#login input[type="submit"]:hover,
+#login input[type="button"]:hover,
+#login input[type="reset"]:hover,
+#login button:hover{
+    box-shadow: 0px 0px 3px gray;
+
+}
+
 
 
 
