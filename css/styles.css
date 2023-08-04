@@ -43,6 +43,12 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     font-family:"WebSymbolsRegular";/*Se aplica una familia se simbolos */
 }
 
+.clearfix{
+    float: none;
+    clear: both;
+
+}
+
 /*CABECERAS*/
 
 #header{/*Se utiliza para indicar que se aplicaran estilos a los elementos del id header*/
@@ -296,47 +302,144 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 #login input[type="submit"],
 #login input[type="button"],
 #login input[type="reset"],
-#login button{
+#login button{ /*Indicamos que pondremos estilos a los id referenciados con respecto a los type que se relacionan*/
     /*display: block;*/
-    text-align: center;
-    width: 100px;
-    height: 35px;
-    margin-top: 20px;
-    color: white;
-    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
-    border: 1px solid #156785;
-    border-radius: 0px;
-    cursor: pointer;
-    font-size:15px;
-    font-family: "TrebechetMS";
-    font-weight: lighter;
-    margin-left: 17px;
-    margin-bottom: 20px;
-    transition: all 300ms;
+    text-align: center;/*Indica que se pondra el texto en el centro del elemento*/
+    width: 100px;/*Tendra un ancho de 100px*/
+    height: 35px;/*tendra el elemnto una altura de 35px*/
+    margin-top: 20px;/*La margen superior tendra un espacio de 20px */
+    color: white;/*Indicamos el color que se desea para el elemento*/
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);/*Se encarga de crear un color de fondo soble el elemto el cual va persentando un adegradacion para crear un efecto viaul muy interesante*/
+    border: 1px solid #156785;/*Indica que tendra un borde de 1px con un azul mas oscuro parabrindra efecto de que es un botn */
+    border-radius: 0px;/*Se aplica bordes redondos en las 4 esquinas del elemnto pero se deja con 0px*/
+    cursor: pointer;/*Se utiliza para quie el pulsor cambie al pasar sobre sobre el elemento */
+    font-size:15px;/*Se tramita un tamaño en la letra de 15px*/
+    font-family: "TrebechetMS";/*Seaplica el estilo de letrra que se desea */
+    font-weight: lighter;/*Indicamos el peso ogrosro que se desea e la letra */
+    margin-left: 17px;/*indica que se tiene una margen alcostado ixquierdo de 17px*/
+    margin-bottom: 20px;/*la margen inferior tendra un espacio de 20px*/
+    transition: all 300ms;/*Se crea un efecto de 300 ms al pasar sobre el efecto */
 
 }
 
 #login input[type="submit"]:hover,
 #login input[type="button"]:hover,
 #login input[type="reset"]:hover,
-#login button:hover{
-    box-shadow: 0px 0px 3px gray;
+#login button:hover{/* Indicamos que se aplicara efecto hover cuando se pare sobre el elemento seleccionado por medio de los id*/
+    box-shadow: 0px 0px 3px gray;/* Se utiliza para indicar que se aplicara efectos de color */
 
 }
 
-#login a{
-    display: block;
-    font-size: 14px;
-    text-decoration: none;
-    margin-left: 18px;
-    color: #555;
+#login a{/*indica que se aplicara efectos al id selecionado con el lemnto a*/
+    display: block;/*Indica que se trabajara como un bloque, permitira trabajar con todo el ancho t alto del elemento*/
+    font-size: 14px;/*Se utiliza para indicar que la eltra tendra un tamaño de 14px*/
+    text-decoration: none;/*Se eelimina la decoracion para el elemento*/
+    margin-left: 18px;/*Se utiliza para indicar que se trabajara un con un espacio en la lamrgen de 18px*/
+    color: #555;/*Tendra un color*/
 
 }
 
-#login a:hover{
-    text-decoration: underline;
-    color: #2f78bc;
+#login a:hover{/*Se aplica efecto hover al id login al pasar sobre el elemento*/
+    text-decoration: underline;/*decoracion al texto de linea cuando estemos sobre el*/
+    color: #2f78bc;/*se aplicara un azul para quye resalta al estas sobre el elemento*/
 }
+
+#social{/*indica que se aplicara estilos a al id social*/
+    height: 190px; /*tendra bloque un tamaño de 190px*/
+}
+
+#social a{/*Indica que se aplicara estilos al id social en el elemnto a*/
+    display: block;/*Se manejara como un bloque y se ocuoara todo el ancho y alto del elemento*/
+    color: #333;/*Se aplica color al elemento*/
+    text-decoration: none;/*Se elimina toda decoracion */
+    font-size: 30px;/*Se aplicara un tamaño en la letra de 30px*/
+    margin-left: 20px;/*Se aplicara una margen con espacio de 20px al costado izquierdo*/
+    margin-top: 10px;/*Se aplica una margen superior de 20px*/
+    margin-bottom: 20px;/*Se aplicara una margen inferior  de 20px para este elemento */
+}
+
+/*ARTICULOS*/
+#articles{/*Se indica que se alicaran estilos generales a al id de articulos*/
+    width: 814px;/*Tendra una ancho total de 814px*/
+    float: right;/*Se flotara al lado derecho de la pagina*/
+    margin: auto;/*tendra un margen automatico en los 4 costados del elemento */
+    margin-right: 76px;/*El costado derech se aplicara unmargen de 76px para centtra los articulos dentro de la web*/
+    
+}
+
+#articles h2{ /*Se aplicaran estilos al id articles y se toma el h2*/
+    display: block;/*Indica que se tomara como un bloque se trabajara en todo el ancho y alto del elemento*/
+    width: 102.5%;/*Se aplicara un acho de mas de 102%para ajusar el tamaño a lo ancho*/
+    height: 75%;/*Tendra un alto de 75% el elemto*/
+    line-height: 75px;/*indica el alto que tendra la casilla*/
+    text-align: center; /*Sera centrado el elemento*/
+    font-family: "BebasNeue";/*Se aplica el estilo de letra seleccioando para este proyecto*/
+    font-size: 40px;/*Se aplica estilo de sombreado al alemento*/
+    font-weight: normal;/*Tendra un grosor o peso de la letra del elemento*/
+    letter-spacing: 2px;/*Indica que tendra el tecto un espacio horizontal entre cada caracter de 2px*/
+    background: url('../img/pxgray.png'),white;/*Se aplica un imagen o banner de fondo por url y se aplica color blanco enel fondo*/
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;/*Se crea efecto de sombra*/
+    margin: 0px;/*Se aplica margen de 0px*/
+    margin-top: 20px;/*Se aplica una margen superior de 0px el exterior del elemento*/
+    margin-bottom: 15px;/*Se aplica una margen de 15px al margen inferior al exterior del elemento*/
+    
+}
+
+#articles article{/*indica que se aplicara estilos a los id de larticles y article*/
+    width: 100%;/*Tendra un ancho total del 100%*/
+    height: auto;/*Tendra un alto automatico*/
+    border: 1px solid #ccc;/*Tendra un borde al costado izquierdo de 1px splido de color gris*/
+    margin: 40px auto;/*La marge superior tendra un esxatcio externi de 40px, mientras que las margenes de los lados sera calculada automaticamente */
+    padding: 10px;/*Tendra un espacio interno de 10px en los 4 costados del elemento*/
+    font-family: "TrebuchetMS";/*Indica el tipo de letra que se aplicara al alemento*/
+    background: white;/*El coor de fondo sera blanco*/
+    color: black;/*Color de la letra se define como negros*/
+    box-shadow: 1px 1px 2px #ddd;/*Se utiliza para aplicar un efecto de sombreado al alemento */
+
+}
+
+#articles article h4{/*Se indica que se aplicara estilos al id articles article h4*/
+    display: block;/*Se trabajara como un bloque, se ocupara todo su anch y alto */
+    font-size: 23px;/*La letra para este elemnto tendra un tamaño de 23px*/
+    margin: 3px;/*Tendra un margen de 3px en los 4 costados del elemento*/
+
+}
+
+#articles article h4 a{/*Se indica que se aplicara estilos al id articles article h4 al link a */
+    text-decoration:none;/*Se retita el tex decoration del elemento*/
+    color:#00538c/*tendra la letra un coor de como el que se indica en exadecimal*/
+
+}
+
+#articles article h4 a:hover{/*Se indica que se aplicara estilos al id articles article h4 al link a se pondra el efecto hover */
+    text-decoration:underline;/*Cuado pase el cursor sobre el elemento este tendra una decoracion  de una linea en el*/
+
+}
+
+#articles .data {/*se indica que se aplicara id en los estilos article con la clase data */
+    float:right;/*Se pondra a flotar el el elemnto alcostado izquierdo*/
+    background: #393d3f;/*Tendra ese tono exadecimal e¿de fondo*/
+    color:white;/*La letra sera blanca */
+    height: 30px;/*Tendra un alto de 30px*/
+    line-height: 30px;/*Tendra un alto en las casillas de 30px*/
+    margin: -10px;/*El margen para los cuatro costados externos del lemnto sera de -10px*/
+    padding: 4px;/*Tendra un espacio interno de 4px en cada uno de los cuatro costados*/
+    font-size: 13px;/*Se utilizara un tamalño en la letra de 13px*/
+    border-radius: 0px 0px 0px 5px;/*Se aplicara el efecto de ezquina redinda pero solo uno tendra valor */
+
+}
+
+#articles .data span{/*Se aplicaran estilos para los id de articles . clases data en span*/
+    margin: 6px;/*Tendra un margen de 6px en los cuatro costados externos del elemento*/
+}
+
+#articles article p{/*Se utliza para indicar que los id de los articles article de p tendran los siguintes estilos*/
+    margin-top: 10px;/*un margen superior externa de 10px*/
+    margin-bottom: 10px;/*Una margen inferior externa de 10px*/
+    font-size: 15px;/*Un tamaño en la letra de 15px*/
+
+}
+
 
 
 
