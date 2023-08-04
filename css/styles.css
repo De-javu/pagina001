@@ -440,7 +440,23 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 
 }
 
+#blog{
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+}
 
+
+
+#blog a{
+    display: block;
+    font-family: "bebasNeue";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #00538C;
+    text-decoration: none;
+}
 
 
 
