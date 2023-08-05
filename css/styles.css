@@ -440,22 +440,22 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 
 }
 
-#blog{
-    height: 100px;
-    margin-top: 60px;
-    line-height: 100px;
-    text-align: center;
+#blog{/*Se indica que se aplicaran estilos a los  id del elemnto blog*/
+    height: 100px;/*Tendra un alturade 100px el elemento*/
+    margin-top: 60px;/*La margen superior externa tendra una distancia de 60px */
+    line-height: 100px;/*La alto de la letras de una linea a la otra sera de 100px*/
+    text-align: center;/*Se utiliza para indicar que el texto sera centrado*/
 }
 
 
 
-#blog a{
-    display: block;
-    font-family: "bebasNeue";
-    font-size: 40px;
-    letter-spacing: 3px;
-    color: #00538C;
-    text-decoration: none;
+#blog a{/*Se indica que se aplicaran estilos al id blog bajo el elento a de link*/
+    display: block;/*Se utiliza para indicar que se manejara como un vloque se utilizara el ancho y el alto en su totalidad*/
+    font-family: "bebasNeue";/*Se hace el llamado del estilo de letra ques e desea*/
+    font-size: 40px;/*la letra tendra un tamaño px */
+    letter-spacing: 3px;/*tendremos un espacio entre los caracteres de 3px*/
+    color: #00538C;/*color de la letra sera el escojido */
+    text-decoration: none;/*SDe retira el la linea decorativa para el link*/
 }
 
 
@@ -477,3 +477,4 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 
 
 
+px
