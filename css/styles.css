@@ -175,6 +175,17 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     background: url("../img/bakbaner.png"); /*Se utiliza para llamara la imagen de fondo que se utilizara para este diseño*/
     background-position: -430px -136px; /*permite que se pueda ajustar los valores en x y y para posicionar los estilos del banner*/
     margin: 20px auto; /*permite tomar la margen respecto a los limites d ela pagina */
+    overflow:hidden ; /*Permiete cuidae la estetica del elemento por que lo que se salga de la caja esta funcion se encraga de ocultarlo  */
+    animation: backBanner 30s linear; /*Indicamos cual sera el nombre de la animacion que se usara */
+}
+
+@keyframes backBanner{/*Idicamos que se aplicara efectos de animacion al  banner bajoel nombre de backBanner*/
+    0%{/*Posicion inicial*/
+        background-position: 0px 0px;/*Position del fondo del banner*/
+    }
+    100%{/*Posicion final*/
+        background-position: -200px -200px;/*¨Posision del fondo del banner final */
+    }
 }
 
 #banner h1{ /*Se utiliza para indicar que se aplicaran estilos al id del banner en la etiqueta h1*/
@@ -187,7 +198,36 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
    letter-spacing: 2px;/*Este es el espacio que se da entre un caracter al otro*/
    text-shadow: 2px 2px 1px black; /*Se utiliza para poner estilos de  sombra al texto*/
    margin: 27px auto; /*El elemnto tendra un margen de 27px */
+   animation: showText 10s linear; /*Indicamos cual sera el nombre de las  animacio ques e usara para el texto*/
+}
+@keyframes showText {/*Iniciamos la linea de tiempo para la animacion del banner h1 con nombre showText*/
+    0%{/*Posision inicial*/
+        transform: translateX(-600%) scale(5,5); /*Se utiliza la funcion de trasformacio se indica que seobre el eje x tendra u movimento a la izquewrda
+                                                  de -600px m,ientras que la funcion scale se encarga de multiplicar por 5 veces el tamaño*/
+        opacity: 1;/*Es la opacidad del findo que permiete que tanto se vera el fondo*/
+    }
+    50%{/*Posision 2/4*/
+        transform: translateX(600%) scale(5,5);/*Se utiliza la funcion de trasformacio se indica que seobre el eje x tendra u movimento a la izquewrda
+                                                 de -600px m,ientras que la funcion scale se encarga de multiplicar por 5 veces el tamaño*/
+        opacity: 1;/*Es la opacidad del findo que permiete que tanto se vera el fondo*/
 
+    }
+    75%{/*Posision 3/4*/
+        transform: translateX(-600%) scale(5,5);/*Se utiliza la funcion de trasformacio se indica que seobre el eje x tendra u movimento a la izquewrda
+                                                  de -600px m,ientras que la funcion scale se encarga de multiplicar por 5 veces el tamaño*/
+        text-shadow: none;/*Se indica que no tendra efecto de sombreado el texto*/
+        color: transparent;/*El color sera trasparente para el texto*/
+        opacity:0; /*Es la opacidad del findo que permiete que tanto se vera el fondo*/
+    }
+    100%{ /*Posision final*/
+        transform: translateX(-600%) scale(1,1);/*Se utiliza la funcion de trasformacio se indica que seobre el eje x tendra u movimento a la izquewrda
+                                                  de -600px m,ientras que la funcion scale se encarga de multiplicar por 5 veces el tamaño*/
+        text-shadow: 2xp 2px 1px black;/*Tendra u efecto de sombreado*/
+        color:white;   /*El color del textpo sera blanco*/            
+        opacity:1; /*Es la opacidad del findo que permiete que tanto se vera el fondo*/
+
+    }
+    
 }
 /*TARJETAS*/
 .card{/*Se utiliza para indicar los estilos que aplicaremops en la clase card*/
