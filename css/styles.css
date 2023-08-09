@@ -43,9 +43,9 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     font-family:"WebSymbolsRegular";/*Se aplica una familia se simbolos */
 }
 
-.clearfix{
-    float: none;
-    clear: both;
+.clearfix{/*Aplicamos la clase crearfix que nos permite flotar los elemntos dentro de clase padre y que estos se acomoden */
+    float: none;/*Se utiliza para eleiminar el efecto de flote del elemnto  asi no se aloja ni a la derecha ni a la izquierda*/
+    clear: both;/*Se utiliza para que un elemento se ubique debajo del otro y no ocupeespacio al lado uno del otro */
 
 }
 
@@ -70,8 +70,12 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     cursor: pointer;/*cuando e cursor se para sobre el elemento este cambia su forma segun se desee*/
     overflow:hidden;/*Se utiliza para mostrar solo el contenido qie cabe en la caja lo que no cabe no se muestra*/
     transition: all 300ms; /*Se utliza para crear una animacion de 300ms*/
+}
 
-
+#logo:hover{/*Se indica  que se realizara estilos con efectos hover al id logo al pasare el cursor sobre el elemento*/
+    border-radius: 2px;/*Se aplicara a las cuatro esquinas del elemento borde redondo de 2px*/
+    color: black;/*El color cambiara al seleccionado*/
+    background-color: #ccc;/*El fondo del color tambien cambiara por el seleccionado*/
 }
 
 #logo .gear{/*Indica que se aplicara estilos a id del logo pero onla clase gear*/
@@ -80,9 +84,39 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     font-size: 30px;/*Permote indicar el tamañode la letra que se utilizara */
     margin-top: 8px;/*Se aplicara una margen superior de 8px*/
     margin-left: 26px;/*Se aplixara una margen  al costado izquierdo de 26px*/
-
+    /*ANIMACIONES PARA EL LOGO*/  
+    animation-name: rotate-gear;/*Indicamos el nombre que tendra la animacion*/
+    animation-duration: 2s;/*Indicamos el tiempo que dura la animacion*/
+    animation-iteration-count: infinite;/*Indicamos que la cantidad de veces que se aplica la animacion es ifinita*/
+    animation-timing-function: linear;/*Indicamos que se desea que el elemnto mantenga una velocidad constante en su animacion*/
 }
 
+@keyframes rotate-gear{/*Indicamos que se utilizara una animacion personalizada llamada rotate-gear y tendra uns efectos a lo largo del tiempo*/
+    form{/*Indica el valor inicial*/
+        transform: rotateZ(0deg);/*Indicaque que rotara de en el eje z 0 angulo*/
+    }
+    to{/*Indica el valor final*/
+        transform: rotateZ(360deg);/*Indica que rotara de el eje z 360 terminara el angulo*/
+    }
+}
+
+#logo:hover .gear{/*indicamos que se palicara estilos al id logo al pasar el cursor con  la clase gear*/
+    animation: fromBellow 500ms linear;/*Indicamos que se aplicara animaciones 500ms linear las cuales seran definidas en fromBellow*/
+}
+
+@keyframes fromBellow{ /*Indicamos que se aplicara animaciones persinalizadas bajo el nombre fromBellow*/
+    0%{ /*la animacion arrnca bajo el efecto 0%*/
+        transform: translateY(0%); /*Estado inicial de 0 sobre el eje Y*/
+    }
+    50%{ /*SDegunda estacion de la animacion a los 50%*/
+        transform: translateY(200%);/*Estado intermedio es del 200% en el eje Y*/
+    }
+    100%{/*Tercera animacion al 100%*/
+        transform: translateY(0%);/*Estado intermedio es del 0% en el eje Y*/
+    }
+}
+
+    
 #logo h3{/*Se aplicara estilos al id del logo con la etiqueta h3*/
     display: block;/*el elemneto sera tratado como un bloque se utilizara todo su acho y todo su alto*/
     float: right; /*El elemento se flotara al costado izquierdo*/
@@ -90,6 +124,19 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     margin-top: 5px;/*El margne superior sera de 5px */
     margin-right: 65px;/*El margen al csotado derfecho sera de 65px*/
     transition: all 300ms;/*Se arelisara un animacion de 300ms */
+}
+
+#logo:hover h3{/*Se utiliza para indicar que se aplicara animaciones al id logo cuando pase el cursor somdre el elemnto h3*/
+    animation: fromRight 300ms linear;/*se define el nombre de la animacion y el tiempo que tendra en transision*/
+}
+
+@keyframes fromRight {/*Se crea la seccion que con lleva la los parametros de animacion */
+    from{/*Donde inicia*/
+        transform: translateX(200%);/*tendra un movimiento de 200% en el eje x*/
+    }
+    to{/*Donde termina*/
+        transform: translateX(0%);/*Tendra un movimiento de 0% en el eje x*/
+    }
 }
 /*MENU*/
 #menu{/*Se aplicaran estilos a los id del elemnto menu*/
@@ -459,77 +506,78 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 }
 
 /*FOOTER*/
-#footer{
-    width: 100%;
-    height: 470px;
-    background: black;
-    color: white;
-    overflow: hidden;
+#footer{/* En esta area indicamos que se aplicara estilos al id footer de la pagina*/
+    width: 100%;/*Tendra un ancho de 100%*/
+    height: 470px;/*Indicamos el alto que tendra*/
+    background: black;/*Se encarga de definir el color de fondo en el elemnto*/
+    color: white;/*la lketra se trabajara con un color blanco*/
+    overflow: hidden;/*Permite que el no se desborde el estilo en la caja  */
 }
 
-#footer .wrap > div{
-    float: left;
-    width: 320px;
-    height: 370px;
-    margin: 40px;
-    text-align: center;
-    color: white;
-    font-family: "TrebuchetMS";
+#footer .wrap > div{/*Se indica que se aplicara estilos al id footer con la calse wrap en el lemnto div*/
+    float: left;/*Se aplicara ejectos flotantes al costado izquierdo*/
+    width: 320px;/*Tendra un ancho de 320px*/
+    height: 370px;/*Tendra un alto de 370px */
+    margin: 40px;/*tendra un margen externa de 40px en cada uno de susu cuatro costados*/
+    text-align: center;/*Indica que se centrara la letra */
+    color: white;/*Tendra la letra un color blanco*/
+    font-family: "TrebuchetMS";/*La letra que se usara pára el proyecto sera la seleccionada*/
 }
 
-#footer a{
-    text-decoration: none;
-    color: #37bcf9;
-    transition: all 300ms;
+#footer a{/*Indica que se aplicara estilos al id del footer espesificamente en el elemnto a */
+    text-decoration: none;/*Se quitara las dcoracions del hipervinculo*/
+    color: #37bcf9;/*Se pondra el color que se ha usado a lo largo de la pagina */
+    transition: all 300ms;/*Tendra un transision de 300ms */
 }
 
-#footer h5{
-    display: block;
-    background: url(../img/pxgray.png),white;
-    height: 50px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-family: "BebasNeue";
-    font-size: 40px;
-    line-height: 55px;
-    color: black;
-    border-radius: 5px;
-    margin-bottom: 15px;
-
-}
-
-#footer ul{
-    text-align: left;
-    margin: 20px;
-    font-size: 25px;
-}
-
-#footer ul li{
-    margin-top: 10px;
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
-}
-
-#footer ul li a{
-    display: block;
-    height: 40px;
+#footer h5{/*Se aplicara estilos al id del footer especificamente en el elemento h5*/
+    display: block;/*Indica que se trabajara como una caja y se utilizara todo el ancho y alto de la pagina*/
+    background: url(../img/pxgray.png),white;/*Se utiliza un imagen de fondo para el elemento*/
+    height: 50px;/*Tendra una altura de 50px el elemento*/
+    letter-spacing: 2px;/*Se indica el espacio que tendra de un caracter al otro */
+    text-align: center;/*Se centrara el contendo a la mitad del elemento*/
+    font-family: "BebasNeue";/*Se aplicara este estilo de letras*/
+    font-size: 40px;/*El tamaño en la letra sera de 40px*/
+    line-height: 55px;/*Se utiliza para indicar el alto que tendra la caja en su contenido de letra*/
+    color: black;/*Se aplicara un color a la letra */
+    border-radius: 5px;/*Se aplicara el efecto de borde redondo de 5px en cada una de sus ezquinas*/
+    margin-bottom: 15px;/*La margen externa inferior sera de 15px */
 
 }
 
-#footer iframe{
-    width: 100%;
-    height: 300px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 5px solid white;
-    box-shadow: 0px 0px 5px gray;
+#footer ul{/*Indicamos que se aplicaran estilos a los id de footer en el elemnto ul*/
+    text-align: left;/*El texto sera enviado a el costado izquerdo de la caja */
+    margin: 20px;/*Tendra un margen de 20px en cada uno de sus 4 costados*/
+    font-size: 25px;/*El tamaño de la letra sera de 25px*/
 }
 
-#footer img{
-    margin-bottom: 15px;
+#footer ul li{ /*elide del footer en los elemntos ul li se aplicara los siguientes estilos*/
+    margin-top: 10px;/*La margen superior tendra espacio de 10px*/
+    padding: 5px;/*El espacio interno de los 4 lados del elemento sera de 5px*/
+    border-bottom: 1px solid #ccc;/*El margen inferior tendra margen 1px solida de color */
 }
-#footer #browsers img{
-    width: 45px;
+
+#footer ul li a{/*Se aplicaran estilos en los id footer en los elemnto ul li*/
+    display: block;/*Se trabajara elelemnto como un bloque y se utilizara todo el ancho y todo el alto */
+    height: 40px;/*tendra el elemnto un alto de 40px*/
+
+}
+
+#footer iframe{/*Se aplicra estilos al id footer en el elemento iframe*/
+    width: 100%;/*Tendra un ancho del 100% el elemento*/
+    height: 300px;/*Tendra un alto el lemnto de 300px*/
+    margin-top: 10px;/*Tendra un margen superior externa de 10px*/
+    border-radius: 5px;/*Las 4 esquinas seran redondeadas con 5px */
+    border: 5px solid white;/*Tendra un borde de 5px solido de color blanco*/
+    box-shadow: 0px 0px 5px gray;/*Tendra un efecto de sombreado*/
+}
+
+#footer img{/*El id del footer se le aplicara estilosespesificamnete al elemnto img */
+    margin-bottom: 15px;/*El margen inferior externo 15 px */
+}
+
+#footer #browsers img{/*Se aplicara estilos al id footer id browsers en elemento img*/
+    width: 45px;/*El elemnto tendra un tamaño de 45px*/
 }
 
 
