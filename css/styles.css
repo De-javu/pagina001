@@ -241,7 +241,10 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     margin: 21px; /*Se aplicara una ,argen de 16px en los cuatro costados del elemento*/
     margin-top: 40px;/*Se utilizara una margen superior de 40px */
     cursor:pointer;/*Se aplica para cuando el cursor se ponga sobre el elemnto este cambie de puntero aa selector*/
-
+    transition: all 30ms;/*Indica que se aplicara una transition de 300ms*/
+}
+.card:hover{/*Indica que se aplicara animaciones a la clase card cuando pase el cursor*/
+    background: black;/*El color de fondo sera de negro*/
 }
 .card .icon{ /*Indicamos los estilos que se aplicaran a las clases card y icon*/
     display: block;/*Se manejaran como lementos de caja y se utilizara todo su ancho y alto*/
@@ -251,7 +254,25 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     line-height: 110px;/*Se utiliza para poner el espacio entre lines dentro del elemento a lo lato de la caja     */
     text-align: center; /*indicamos que el texto se centrara*/
     margin: auto;/*El lemnto tendra una margenautomatica en  sus cuatro costados*/
+    transition: all 300ms;/*El elem,nto tendra una animacion de transision de 300ms*/
 }
+
+.card:hover .icon{/*La clase card tendra animacion cuando pase el cursor sobre la clase icon*/
+    font-size: 70px;/*Tendra una letra de de un tamaño de 70px */
+    color: #37bcf9;/*El color sera el seleccionado en la funcion */
+    animation: showIcon 300ms linear;/*Se le aplicara una aminacion, la nombramos de 30ms y sera linear*/
+
+}
+
+@keyframes showIcon{/*Esta es la linea de tiempo de la animacion la cual se debe llamar con el nombre correspondiente*/
+    from{/*Incio de la linea de tiempo = 0%*/
+        transform: translateY(-200%);/*Se aplica la funcion transform que se trasladara sobre el eje y(-200%)*/
+    }
+    to{/*FInaliza la linea de tiempo 100%*/
+        transform: translateY(0%);/*Se aplica la funcion trasform que se trasladra sobre eel eje y (0%)*/
+    }
+}
+
 
 .card .category{/*incamos que se aplicaran estilos a las clases card y category*/
     width: 100%;/*El lemnto tendra un acbho del 100%*/
@@ -261,14 +282,53 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
     font-weight:bold;/*Indicamos que es peso de la letra sera en negrita*/
     text-align: center;/*lo utilizamos para indicar que el texto sera centrado */
     color: #00538c;/*este es el color que se apliocara al elemento*/
+    transition: all 300ms;
 }
 
+.card:hover .category{/*Se aplica efectos a la calse card cuando pase el cursor sobre la calse category*/
+    color: white;/*Se define el color que se reflejara al pararse con el cursor*/
+    animation: showCategory 400ms linear;/*Se le aplicara una aminacion, la nombramos de 30ms y sera linear*/
+
+}
+
+@keyframes showCategory {/*Esta es la linea de tiempo de la animacion la cual se debe llamaar con el nombre que se asigno */
+    from{/*Iniciamos la linea del tiempo que es igual 0% */
+        transform: translateY(-300%);/*Se aplica la funcion trnasform la cual se trasladara sobre el eje y (-300%)*/
+        color: black;/*El color que se define para esta aplicacion es el indicado en la funcion */
+    }
+    to{/*Finaliza la linea de tiempo la cual es igual al 100%*/
+        transform: translateY(0%);/*Se aplica la funcion transform la cual se trasladara sobre el eje Y (0%)*/
+        color:white;/*El color selecionado para este efecto es el indicado por la funsion */
+    }
+    
+}
 .card .description{/*Se indica que se aplicara estilos a las calses card y description*/
     font-family: "TrebuchetMS";/*Se indica el tipo de ltetra que aplicara*/
     text-align: center;/*Se centrara el texto*/
     color: hsl(204, 83%, 45%);/*aplicamos un color al elemnto*/
     font-size: 15px;/*el tamaño de la letra sera de 15px*/
+    transition: all 300ms;/*Se aplicara efecto de animacion de 300ms*/
 }
+
+.card:hover .description{/*Se apliacara efectos a la clase card cuando pase el cursor sobre la calase description*/
+    color:white;/*El efecto sera el cambio de color por el seleccionado en la funcion */
+    animation: showDescription 400ms linear;/*Se le aplicara una aminacion, la nombramos de 30ms sera lineal*/
+}
+
+@keyframes showDescription{/*Esta es la linea de tiempode la animacio la cual debe llamar el nombre de que se asigno para la animacion*/
+    from{/*Incio de la linea de tiempo (0%)*/
+        transform: translateX(-300%); /*Se aplica la funcion transform se trasladra en el eje X(-300)*/
+        color: black;/*Se aplicara un cambio de color por el seleccioando en esta funcion */
+    }
+    to{/*Fin de la linea de tiempo (100&)*/
+        transform: translateX(0%);/*Se apliaca la funcion transfor se trasladra en el eje X(0%)*/
+    }
+}
+
+
+
+
+
 
 /* BARRA LATERAL */
 #lateral{/*Se aplicaran estilos a la id del elemento lateral*/
