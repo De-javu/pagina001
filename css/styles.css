@@ -525,9 +525,9 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 
 }
 
-#social div:hover .overlay{
-    opacity: 1;
-    transform: translateX(0%);
+#social div:hover .overlay{/*se aplica efecto id social caja div caundo pase el cursor .overlay*/
+    opacity: 1;/*Tendra una opacidad de 1*/
+    transform: translateX(0%);/*se tendra un trasladacion en el eje X (0%)*/
 }
 
 /*ARTICULOS*/
@@ -617,7 +617,7 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
     margin-top: 60px;/*La margen superior externa tendra una distancia de 60px */
     line-height: 100px;/*La alto de la letras de una linea a la otra sera de 100px*/
     text-align: center;/*Se utiliza para indicar que el texto sera centrado*/
-    transition: all 1s;
+    transition: all 1s; /*Tendra una transicion de 1s */
 }
 
 
@@ -629,38 +629,38 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
     letter-spacing: 3px;/*tendremos un espacio entre los caracteres de 3px*/
     color: #00538C;/*color de la letra sera el escojido */
     text-decoration: none;/*SDe retira el la linea decorativa para el link*/
-    transition: 1s;
+    transition: 1s; /*Indica que tendra un transicion */
 }
 
-#blog:hover{
-    background-color: #555;
-    border: 10px solid #37bcf9;
-    border-radius: 240px;
-    box-shadow:  0px 0px 10px gray;
-    animation: blink 10s infinite linear;
+#blog:hover{/*Se apliaca efectos al blog con el paso del cursor sobre el elemento:*/
+    background-color: #555;/*Se aplica el color de fondo*/
+    border: 10px solid #37bcf9;/*Tendra un borde px de  solid*/
+    border-radius: 240px;/*Tendra un borde redondo en las esquinas de 240px*/
+    box-shadow:  0px 0px 10px gray;/*tendra un efecto de sombreado color grys*/
+    animation: blink 10s infinite linear;/*se aplicara una animation con nombre blink de 10s de repeticion infinita linear */
 
 }
 
-#blog:hover a{
-    color: white;
-    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black,1px 4px 1px black,1px 5px 1px black,1px 6px 1px black;
+#blog:hover a{ /*Indica que se aplicara animaciones al efecto blog: cuando pase el cursor sommbre el elemento a */
+    color: white;/*Color sera blanco*/
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black,1px 4px 1px black,1px 5px 1px black,1px 6px 1px black; /*Este sera el efecto de sombreado que tendra el elemento*/
 }
 
-@keyframes blink{
-    0%{
-        border: 10px solid #37bcf9;
+@keyframes blink{/*Se aplica animacio en la linea de tiempo con el nombre que se aplico para dicho el elemento */
+    0%{/*primer moento en la linea de timpo*/
+        border: 10px solid #37bcf9;/*Se aplicara un borde 10px solido en los 4 costados del elemento con el color seleccinado*/
     }
-    25%{
-        border: 10px solid green;
+    25%{/*Segundo momento en la linea de tiempo*/
+        border: 10px solid green; /*Se aplicara un borde 10px solido en los 4 costados del elemento con el color seleccinado*/
     }
-    50%{
-        border: 10px solid yellow;
+    50%{/*Tercer momento en la linea de tiempo*/
+        border: 10px solid yellow; /*Se aplicara un borde 10px solido en los 4 costados del elemento con el color seleccinado*/
     }
-    75%{
-        border: 10px solid white;
+    75%{/*Cuarto momento en la linea de tiempo*/
+        border: 10px solid white;/*Se aplicara un borde 10px solido en los 4 costados del elemento con el color seleccinado*/
     }
-    100%{
-        border: 10px solid #37bcf9;
+    100%{/*quinro momento en la linea de tiempo*/
+        border: 10px solid #37bcf9;/*Se aplicara un borde 10px solido en los 4 costados del elemento con el color seleccinado*/
     }
 
 }
