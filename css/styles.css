@@ -505,6 +505,31 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
     margin-bottom: 20px;/*Se aplicara una margen inferior  de 20px para este elemento */
 }
 
+#social .overlay{/*Indica ques eaplicaran estilos en el id social de la clase overlay*/
+    display: block;/*Indica que se trabjara como un bloque el cual se utilizara todo su ancho y alto */
+    height: 20px;/*tendra un ancho el elemnto de 20px*/
+    font-family: Arial, Helvetica, sans-serif;/*El estilo de letra que se trabajara */
+    font-weight: bold;/*Se utiliza para que el texto se vea en negrita*/
+    letter-spacing: 1px;/*Indica que la letra tendra un espacio entre caracteres de 1px*/
+    text-shadow: 0px 0px 1px #ccc;/*Se utiliza para poner efecto de sombreado en el elemento*/
+    border: 3px solid white;/*Se utilizara un borde de 3px solido en blanco en los 4 costados del elemento*/
+    text-shadow: 0px 0px 4px #ccc;/*Se aplica efectos de sombreado al texto*/
+    background: #F4F7FE;/*Se utiliza para indicar el fondo que tendra la tendra la pagina*/
+    position: absolute;/* Se utiliza para indicar que se aplicara como un elemnto con pistion absoluta el cual permietira sobre poner el elemnto en la caja */
+    padding: 5px; /*Tendra un espacio interno en los 4 lados del elemnto de 5px*/
+    margin-left: 70px;/*Se apliacara una margen al costado izquierdo del elemento de 70px*/
+    margin-top: -52px;/*se utiliza para indicar que se aplicara una margen superior de -52px*/
+    transform: translateX(-80%);/*Indica que se movera el elemento un 80% la costado izquierdo*/
+    opacity: 0;/*Se aplicara un opaciadda de de 0*/
+    transition: all 400ms;/*Tendra un efecto de trasicion de 400ms*/
+
+}
+
+#social div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 /*ARTICULOS*/
 #articles{/*Se indica que se alicaran estilos generales a al id de articulos*/
     width: 814px;/*Tendra una ancho total de 814px*/
@@ -592,6 +617,7 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
     margin-top: 60px;/*La margen superior externa tendra una distancia de 60px */
     line-height: 100px;/*La alto de la letras de una linea a la otra sera de 100px*/
     text-align: center;/*Se utiliza para indicar que el texto sera centrado*/
+    transition: all 1s;
 }
 
 
@@ -603,6 +629,40 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
     letter-spacing: 3px;/*tendremos un espacio entre los caracteres de 3px*/
     color: #00538C;/*color de la letra sera el escojido */
     text-decoration: none;/*SDe retira el la linea decorativa para el link*/
+    transition: 1s;
+}
+
+#blog:hover{
+    background-color: #555;
+    border: 10px solid #37bcf9;
+    border-radius: 240px;
+    box-shadow:  0px 0px 10px gray;
+    animation: blink 10s infinite linear;
+
+}
+
+#blog:hover a{
+    color: white;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black,1px 4px 1px black,1px 5px 1px black,1px 6px 1px black;
+}
+
+@keyframes blink{
+    0%{
+        border: 10px solid #37bcf9;
+    }
+    25%{
+        border: 10px solid green;
+    }
+    50%{
+        border: 10px solid yellow;
+    }
+    75%{
+        border: 10px solid white;
+    }
+    100%{
+        border: 10px solid #37bcf9;
+    }
+
 }
 
 /*FOOTER*/
@@ -655,13 +715,23 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
     margin-top: 10px;/*La margen superior tendra espacio de 10px*/
     padding: 5px;/*El espacio interno de los 4 lados del elemento sera de 5px*/
     border-bottom: 1px solid #ccc;/*El margen inferior tendra margen 1px solida de color */
+
 }
 
 #footer ul li a{/*Se aplicaran estilos en los id footer en los elemnto ul li*/
     display: block;/*Se trabajara elelemnto como un bloque y se utilizara todo el ancho y todo el alto */
     height: 40px;/*tendra el elemnto un alto de 40px*/
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
 
 }
+ 
+
 
 #footer iframe{/*Se aplicra estilos al id footer en el elemento iframe*/
     width: 100%;/*Tendra un ancho del 100% el elemento*/
