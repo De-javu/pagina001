@@ -1,0 +1,48 @@
+/*MAQUETACION RESPOSIVE 1250 PX*/
+
+@media (max-width:1250px){
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+}
+
+#banner h1{
+    font-size: 35px;
+    text-align: center;
+    margin: 33px auto;
+}
+
+.card{
+    width: 17%;
+    margin: 1.4%;
+}
+.card p{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#articles{
+    width: 44.2%;
+}
+
+#articles article{
+     width: 100.4%;
+
+}
+
+#footer .wrap > div {
+width: 24%;
+}
+
+#footer #browsers img{
+    width: 14%;
+}
+
+#footer iframe {
+    height: 72%;
+}

@@ -232,7 +232,7 @@ body{/*Se utiliza paea indicar que se aplixarane estilos directa,mee al body de 
 /*TARJETAS*/
 .card{/*Se utiliza para indicar los estilos que aplicaremops en la clase card*/
     float:left;/*se utiliza para indicar quye se flotara al lado izquierdo*/
-    width: 206px;/*definios el porcentaje dle ancho que se dese para elemento*/
+    width: 205px;/*definios el porcentaje dle ancho que se dese para elemento*/
     height: 305px;/*Se utiliza para definir el alto que tendra el elemento*/
     border: 1px solid #ccc;/*se utiliza para indicar los bordes del elento y se aplica un tono blanco en sus cuatro costados */
     box-shadow: 1px 1px 2px #ddd;/*Se utiliza para definir el sombreado que tendra el elemento*/
@@ -558,7 +558,7 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 }
 
 #articles article{/*indica que se aplicara estilos a los id de larticles y article*/
-    width: 100%;/*Tendra un ancho total del 100%*/
+    width: 97%;/*Tendra un ancho total del 100%*/
     height: auto;/*Tendra un alto automatico*/
     border: 1px solid #ccc;/*Tendra un borde al costado izquierdo de 1px splido de color gris*/
     margin: 40px auto;/*La marge superior tendra un esxatcio externi de 40px, mientras que las margenes de los lados sera calculada automaticamente */
