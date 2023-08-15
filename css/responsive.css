@@ -1,48 +1,56 @@
 /*MAQUETACION RESPOSIVE 1250 PX*/
 
-@media (max-width:1250px){
-    .wrap{
-        width: 90%;
-        margin: 0px auto;
+@media (max-width:1250px){/*Se utiliza para indicar el corte en el media query de como se veera el dispositivo en una pantalla de minimo 1250px*/
+    .wrap{/*Se aplican estilos a la clase de la barra superior de la pagina */
+        width: 90%;/*Se pone un tamaño de 90%*/
+        margin: 0px auto;/*El margen superior e inferior tendran 0px mientras los dos costados restantes sera automatico calculados por el navegador*/
+    
+
     }
 
+
+
+#banner h1{/*aplica estilos al id del banner que encierra un diseño */
+    font-size: 35px;/*Tendra un tamaño en la letra de 35px*/
+    text-align: center;/*Se enviara el teto al centro al centro*/
+    margin: 33px auto;/*El margen superior e inferior tendran 33px meintras los dos costados restantes sera automatico  calculados por el navegador*/
 }
 
-#banner h1{
-    font-size: 35px;
-    text-align: center;
-    margin: 33px auto;
+.card{/*Se aplicaran estilos a la clase card que contiene en general de las tarjetas*/
+    width: 16.9%;/*Se aplica un ancho visual menete compatible con la pantalla*/
+    margin: 1.4%;/* Se aplica un margin 1.4% el cuatro costados de los elementos*/
 }
-
-.card{
-    width: 17%;
-    margin: 1.4%;
-}
-.card p{
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-
-}
-
-#articles{
-    width: 44.2%;
-}
-
-#articles article{
-     width: 100.4%;
+.card p{/*se indica que se aplicara estilos a la calse card del elemnto p*/
+    display: block;/*Se ,anejara como un block ele lemnto lo cual permiete que se utilice en ancho y el alto en su totalidad*/
+    width: 90%;/*Se ajusta el  ancho del elemento*/
+    margin: 0 auto;/*Se trabja con una margen de 0px en lo alto u superior y las laterasles las calculara el sistema atomaticamente*/
+    text-align: center;/*Indica que el texto sera centrado*/
 
 }
 
-#footer .wrap > div {
-width: 24%;
+#articles{/*Se aplicaran estilos al id de articles */
+    width: 44.2%;/*Se ajusta el ancho del elemnto para que se visualice correctamente*/
 }
 
-#footer #browsers img{
-    width: 14%;
+#articles article{/*Se aplica estilos id articles en el elemnto article*/
+     width: 100%;/*Se ajusta elancho del elemnto para que se visualice correctamente*/
+
 }
 
-#footer iframe {
-    height: 72%;
+#footer .wrap > div {/*Se aplica estilod al id del footer en la clase wrap > del elemnto div */
+width: 24%;/*Se aplica un porcentaje de ancho para que este se ajuste y se visulice perfecto*/
 }
+
+#footer #browsers img{/*Se aplica estilos al id footer y al id browsers del elemento img*/
+    width: 14%;/*Se aplica un ancho para que este se ajuste correctamente*/
+}
+
+#footer iframe {/*Se aplicaran estilos al id del footer iframe*/
+    height: 72%; /*Se aplicara un alto que se ajuste a una visulaizacion perfecta del elemento*/
+}
+
+#footer h5{/*Se aplicara estilos al id del footer del elemnto h5*/
+    font-size: 30px;/*Se aplicara un tamaño a la letra de 30px*/
+}
+}
+

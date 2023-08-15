@@ -558,7 +558,7 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 }
 
 #articles article{/*indica que se aplicara estilos a los id de larticles y article*/
-    width: 97%;/*Tendra un ancho total del 100%*/
+    width: 100%;/*Tendra un ancho total del 100%*/
     height: auto;/*Tendra un alto automatico*/
     border: 1px solid #ccc;/*Tendra un borde al costado izquierdo de 1px splido de color gris*/
     margin: 40px auto;/*La marge superior tendra un esxatcio externi de 40px, mientras que las margenes de los lados sera calculada automaticamente */
