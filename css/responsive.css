@@ -1,56 +1,444 @@
 /*MAQUETACION RESPOSIVE 1250 PX*/
 
-@media (max-width:1250px){/*Se utiliza para indicar el corte en el media query de como se veera el dispositivo en una pantalla de minimo 1250px*/
-    .wrap{/*Se aplican estilos a la clase de la barra superior de la pagina */
-        width: 90%;/*Se pone un tamaño de 90%*/
-        margin: 0px auto;/*El margen superior e inferior tendran 0px mientras los dos costados restantes sera automatico calculados por el navegador*/
-    
+
+@media (max-width:1250px) {
+
+    /*Se utiliza para indicar el corte en el media query de como se veera el dispositivo en una pantalla de minimo 1250px*/
+    .wrap {
+        /*Se aplican estilos a la clase de la barra superior de la pagina */
+        width: 90%;
+        /*Se pone un tamaño de 90%*/
+        margin: 0px auto;
+        /*El margen superior e inferior tendran 0px mientras los dos costados restantes sera automatico calculados por el navegador*/
+
 
     }
 
 
 
-#banner h1{/*aplica estilos al id del banner que encierra un diseño */
-    font-size: 35px;/*Tendra un tamaño en la letra de 35px*/
-    text-align: center;/*Se enviara el teto al centro al centro*/
-    margin: 33px auto;/*El margen superior e inferior tendran 33px meintras los dos costados restantes sera automatico  calculados por el navegador*/
+    #banner h1 {
+        /*aplica estilos al id del banner que encierra un diseño */
+        font-size: 35px;
+        /*Tendra un tamaño en la letra de 35px*/
+        text-align: center;
+        /*Se enviara el teto al centro al centro*/
+        margin: 33px auto;
+        /*El margen superior e inferior tendran 33px meintras los dos costados restantes sera automatico  calculados por el navegador*/
+    }
+
+
+    #cards {/*Se aplicara estilos a los id de las cards*/
+        display: block;/*Se utiliza para indicar que se tratara el elemnto como un bloque*/
+        width: 100%;/*Se utilizara el 100% de l ancho del elemento*/
+    }
+
+    .card {
+        /*Se aplicaran estilos a la clase card que contiene en general de las tarjetas*/
+        width: 16.9%;
+        /*Se aplica un ancho visual menete compatible con la pantalla*/
+        margin: 1.4%;
+        /* Se aplica un margin 1.4% el cuatro costados de los elementos*/
+    }
+
+    .card p {
+        /*se indica que se aplicara estilos a la calse card del elemnto p*/
+        display: block;
+        /*Se ,anejara como un block ele lemnto lo cual permiete que se utilice en ancho y el alto en su totalidad*/
+        width: 90%;
+        /*Se ajusta el  ancho del elemento*/
+        margin: 0 auto;
+        /*Se trabja con una margen de 0px en lo alto u superior y las laterasles las calculara el sistema atomaticamente*/
+        text-align: center;
+        /*Indica que el texto sera centrado*/
+
+    }
+
+    #articles {
+        /*Se aplicaran estilos al id de articles */
+        width: 55.3%;
+        /*Se ajusta el ancho del elemnto para que se visualice correctamente*/
+    }
+
+    #articles article {
+        /*Se aplica estilos id articles en el elemnto article*/
+        width: 100%;
+        /*Se ajusta elancho del elemnto para que se visualice correctamente*/
+
+    }
+
+    #footer .wrap>div {
+        /*Se aplica estilod al id del footer en la clase wrap > del elemnto div */
+        width: 24%;
+        /*Se aplica un porcentaje de ancho para que este se ajuste y se visulice perfecto*/
+    }
+
+    #footer #browsers img {
+        /*Se aplica estilos al id footer y al id browsers del elemento img*/
+        width: 14%;
+        /*Se aplica un ancho para que este se ajuste correctamente*/
+    }
+
+    #footer iframe {
+        /*Se aplicaran estilos al id del footer iframe*/
+        height: 72%;
+        /*Se aplicara un alto que se ajuste a una visulaizacion perfecta del elemento*/
+    }
+
+    #footer h5 {
+        /*Se aplicara estilos al id del footer del elemnto h5*/
+        font-size: 30px;
+        /*Se aplicara un tamaño a la letra de 30px*/
+    }
+
+    aside h3 {
+        font-size: auto;
+    }
 }
 
-.card{/*Se aplicaran estilos a la clase card que contiene en general de las tarjetas*/
-    width: 16.9%;/*Se aplica un ancho visual menete compatible con la pantalla*/
-    margin: 1.4%;/* Se aplica un margin 1.4% el cuatro costados de los elementos*/
-}
-.card p{/*se indica que se aplicara estilos a la calse card del elemnto p*/
-    display: block;/*Se ,anejara como un block ele lemnto lo cual permiete que se utilice en ancho y el alto en su totalidad*/
-    width: 90%;/*Se ajusta el  ancho del elemento*/
-    margin: 0 auto;/*Se trabja con una margen de 0px en lo alto u superior y las laterasles las calculara el sistema atomaticamente*/
-    text-align: center;/*Indica que el texto sera centrado*/
+@media (max-width: 1080px) {
+
+    /* Se utiliza para indicar el corte que se tendra en la en el media query de 1080px*/
+    .card .category {
+        /*Se aplicaran estilos a la calse .card de la clase category*/
+        font-size: 17px;
+        /*Se aplicara un tamaño de letra de 17px*/
+    }
+
+    .card .description {
+        /*Se aplicara estilos a la clase card dentro de la clase description*/
+        font-size: 14px;
+        /*Se aplicara un tamaño de letra de 14px*/
+    }
+
+    #articles { /*indica que se aplicara estilos al id articles*/
+        width: 51%;/*Tendra un ancho de 51% en el espacio total del elemento*/
+    }
+
+    #lateral {/*Indica que se aplicaran estilos al id lateral */
+        width: 30%;/*Se modificara el ancho del elemnto al 30%*/
+    }
+
+    .aside-box {/*Se aplicaran estilos a la clase */
+        width: 97%;/*Se modificara el ancho a un 97%*/
+        height: 272;/*Se modificara la altura al 272*/
+    }
+
+    aside h3 {/*Se aplicaran estilos al elemento*/
+        font-size: 25px;/*Se cambios en el tamaño de la letra para este elemento*/
+    }
 
 }
 
-#articles{/*Se aplicaran estilos al id de articles */
-    width: 44.2%;/*Se ajusta el ancho del elemnto para que se visualice correctamente*/
+
+@media (max-width: 970px) {
+    /*Indicamos que aplicarmos estilos de adactacion a las pantallas de hasta 970px*/
+
+    #footer .wrap>div {
+        /*Se aplicara al id foofter con la clase wrap dentro del div*/
+        width: 25.5%;
+        /*Se aplicara un ancho de 26%*/
+        margin: 26px;
+        /*Se aplicaran margenes en los 4 costados de 26px*/
+    }
+
+    footer h5 {
+        /*Se aplicara estilos al elemnto footer del elemnto h5*/
+        font-size: 20px;
+        /*Se aplicara una tamaño de letra de 20px*/
+    }
 }
 
-#articles article{/*Se aplica estilos id articles en el elemnto article*/
-     width: 100%;/*Se ajusta elancho del elemnto para que se visualice correctamente*/
+@media (max-width: 925px) {
+    /*Se aplicara los media quiery a las pantallas desde hasta 925px*/
 
-}
+    #header {/*Se alicaran estilos al id del hedear*/
+        width: 100%;/*Se aplicara un ancho del 100%*/
+        height: 120px;/*Se aplicara un alto de 120px*/
+        padding-top: 10px;/*Se aplicara un espacio superior de 10px*/
+    }
 
-#footer .wrap > div {/*Se aplica estilod al id del footer en la clase wrap > del elemnto div */
-width: 24%;/*Se aplica un porcentaje de ancho para que este se ajuste y se visulice perfecto*/
-}
+    #logo {/*Se aplicaran estilos al id del logo*/
+        float: none;/*No se flotaran los elemntos para esta modificacion de pantalla*/
+        width: 200px;/*tendra un ancho del elemnto de 200px*/
+        margin: 0px auto;/*se aplicaran margenes en lo alto y bajo de 0px y los laterales tendra un tamaño automatico*/
+    }
 
-#footer #browsers img{/*Se aplica estilos al id footer y al id browsers del elemento img*/
-    width: 14%;/*Se aplica un ancho para que este se ajuste correctamente*/
-}
+    #menu {/*Se aplicaran estilos al id del elemnto menu*/
+        clear: both;/*ubica el elemnto en la linea de abajo para que no quede montado*/
+        float: none;/*No se flotara el elemento*/
+        width: 560px;/*Se apliacara un ancho de 560px para este elemento*/
+        margin: 0px auto;/*Se aplicaran margen en la parte superior e inferior del elemnto y los costados tendran tamaño automatico*/
+    }
 
-#footer iframe {/*Se aplicaran estilos al id del footer iframe*/
-    height: 72%; /*Se aplicara un alto que se ajuste a una visulaizacion perfecta del elemento*/
-}
+    #articles {
+        /*Se aplicaran estilos al id articles*/
+        width: 53.2%;
+        /*Se pondra un tamaño total de 57%*/
+    }
 
-#footer h5{/*Se aplicara estilos al id del footer del elemnto h5*/
-    font-size: 30px;/*Se aplicara un tamaño a la letra de 30px*/
-}
-}
+    #lateral {
+        /*Se aplicaran estilos a id latera */
+        width: 25%;
+        /*Se apkicaran un ancho total de 25%*/
+    }
 
+    #lateral input[type="text"] {
+        /*Se aplicaran estilos al id lateral input type text*/
+        width: 78%;
+        /*Se aplicara un ancho de 78%*/
+    }
+
+    #login input[type="email"],
+    #login input[type="password"] {
+        /*Se aplicaran estilos al id login en el type enamil , y passwoord */
+        width: 70%;
+        /*Se aplicara un ancho del 70%*/
+    }
+
+    .aside-box {
+        /*Se aplicaran estilos a la clase aside-box*/
+        width: 96%;
+        /*Se propone un ancho de 96%*/
+        min-height: 140px;
+        /*Un minimo alto de 140px*/
+        height: auto;
+        /*Un grosor automatico*/
+        padding-bottom: 10px;
+        /*Espacio inferior interno de 10px*/
+    }
+
+    aside h3 {
+        /*Se apliacan estilos al elemnto aside h3*/
+        font-size: 19px;
+        /*Se pondra un tamaño de letra de 19px*/
+        text-align: center;
+        /*Se centrara el texto en el espacio que brinda el elemento*/
+    }
+
+    #login input[type="submit"],
+    #login input[type="button"],
+    #login input[type="reset"],
+    #login button {
+        /*Se aplicaran estilos a los id login input type submit, button, reset*/
+        margin-bottom: 5px;
+        /*Se aplicara un margen inferior externa de 5px*/
+    }
+
+    #login a {
+        /*Se aplicaran estilos al id login del elemnto a */
+        margin-top: 10px;
+        /*Se aplicara un margen superior externa de 10px*/
+        margin-bottom: 10px;
+        /*Se aplicara margen infeior de 10px */
+    }
+
+    #login input[type="reset"] {
+        /*Se aplicaran estilos a los id login input tuype reset*/
+        display: none;
+        /*Se utiliza para opcultar el elemento */
+
+    }
+
+    #banner h1 {
+        /*Se aplicaran estrilos al id banner h1*/
+        width: 100%;
+        /*Se aplicaran estilos al ancho del 100% del elemento */
+    }
+
+    @media (max-width: 899px) {
+        /*Se alicaran estilos al media query para un ancho de pantalla max de 899px*/
+
+        #lateral h3 {
+            /*Se aplicara esyilos al id lateral del elemnto h3*/
+            font-size: 15px;
+            /*Se aplicara un tamaño de letra de 15px*/
+        }
+
+
+    }
+
+
+    @media (max-width: 799px) {/*Se aplicaran ajustes para el tamaño de pantalla de 799px*/
+        #banner h1 {/*Se aplicaran etilos en el id del banner*/
+            font-size: 29px;/*Se modificara el tamaño de la letra */
+        }
+
+        .card {/*Se aplicaran estilos en la clase card*/
+            height: auto;/*Se pondra el alto del elemento automatico*/
+        }
+
+        .card .category {/*Se aplicaran estilos a las clases de card y category*/
+            font-size: 15px;/*se modificara el tamaño de la letra a 15px*/
+            margin-top: -20px;/*Se aplicara una margen superior de -20px*/
+        }
+
+        .card .description {/*Se aplicaran estilosa a las clases card y descrition */
+            display: none;/*Se pondra como diplay none*/
+        }
+
+        #footer img {/*Se aplicaran estilos al id img para este tamaño */
+            margin-bottom: 15px;/*Se aplicaran margen a la parte inferior del elemento en 15px*/
+            max-width: 100%;/*Se indica cuanto sera el maximo ancho permitido para el elemento*/
+        }
+
+    }
+
+    @media (max-width: 750px) {/*Se aplicaran ajuses para pantallas de 750px como maximo */
+
+        #articles {/*Se aplicara estilos al id article */
+            width: 50%;/*Se aplicara un ancho de del 50% para este elemnto*/
+        }
+
+        #articles h2 {/*Se aplicaran estilos al id article en el elemento h2*/
+            width: 104.5%;/*Se aplicara un ancho de 104.5% para este elemento*/
+        }
+
+        #lateral h3 {/*Se aplicara el id article enel elemento h3*/
+            font-size: 12px;/*Se aplicara un tamaño en la letra de 12px*/
+        }
+
+        .card {/*Se aplicaran estilos a la clase card */
+            width: 16.5%;/*Se aplicara un ancho */
+            margin: 1.4%;/*Se modificaran las margenes de los 4 costados */
+        }
+
+        #footer .wrap>div {/*Se aplicara el id footer con la clase wrap en el eelemnto div*/
+            width: 23.5%;/*Se modifica el ancho para qye se visualice muy bien en la pantalla*/
+            margin: 24px;/*Se aplicara una margen en los cuatro costados del elemento */
+        }
+
+        #footer h5 {/*Se aplicaran estilos al id footer en ele elemnto h5*/
+            font-size: 25px;/*Se modifica el tamaño de la letyra para que se adapte al tamaño de la pagina */
+        }
+
+
+    }
+
+    @media (max-width: 660px) {/*Se aplicara estilos para pantallas con tamaño maximo de 660px */
+
+        #banner h1 {/*Se aplicaran estilos al id banner del elemento h1*/
+            font-size: 30px;/*Se modificara el tamaño de la letra para que se adpte a la pantalla*/
+        }
+
+        #lateral {/*Se aplicaran estilos al id lateral */
+            float: none;/*Se aplica para que se puede sobre poner*/
+            width: 100%;/*Se extiende el ancho del elemnto a su tamaño maximo*/
+            margin: 0px auto;/*Se aplica margen a l alto y bajo de 0px y a los costadoi este sera automatico*/
+            min-height: auto;/*El minimo alto del elemnto se definira automatico*/
+            margin-top: 20px;/*Tendra una margen superiro de 20px*/
+
+        }
+
+        #articles {/*Se aplicaran estilos al id articles */
+            float: none;/*Se aplica para que se pueda sobre poner */
+            width: 90%;/*Se ajusta el ancho se gun lo require ael nuevo tamañode pantalla*/
+            margin: 0px 15px;/*Se aplica margen 0px para alto y bajo y los laterales seran automaticos*/
+            min-height: auto;/*El manimo alto sea automatico segum lo necesite la web*/
+
+        }
+
+        #login input[type="email"],
+        #login input[type="password"] {/*Se aplicaran estilos al id login input para los typt email y password*/
+            width: 90%;/*El ancho para esto elemento se modifican para su plena visualizacion */
+        }
+
+        #lateral h3 {/*Se aplicaran estilos a los id lateral del eelemnto h3*/
+            font-size: 20px;/*Se modifica el tamaño de la letra*/
+            font-weight: bold;/*Se aplica negrita al texo para que resalte mas*/
+        }
+
+        #footer {/*Se aplicaran estilos al id footer*/
+            height: auto;/*Se aplicar un alto automatico para que se ajuste ele eelemento segun lo necesite la web*/
+            padding-bottom: 40px;/*Se aplicara espacio en el parte inferior del elemento */
+        }
+
+        #footer .wrap>div {/*Se aplicara estilos al id footer de la clase wrap en el elemnto div*/
+            width: 100%;/*Se aplica un ancho del 100%*/
+            margin: 0px auto;/*margen de 0px en el alto y bajo del elento y los costado seran automaticos */
+            margin-top: 20px;/*La margen superior se ajustar con 20px*/
+        }
+
+        #footer h5 {/*Se aplicaran estilos al id footer en el elemento h5*/
+            font-size: 25px;/*Se modofica el tamaño de la letra */
+        }
+
+    }
+
+
+    @media (max-width: 599px) {/*Se aplicaran modicicaciones para pantallas maximo de 599px*/
+
+
+
+        #menu {/*Se aplicaran estilos al id del menu*/
+            clear: both;/*Permiete que no sea desplazado por otros elemntos flotantes y lo rganiza debajo  */
+            float: left;/*Se aplicara el efecto flotante para que se aneviado al costado izquierdo*/
+            width: 70%;/*Tendraun ancho maximo de 70%*/
+            margin: 0px auto;/*Se aplicara opx para las margen inferior y la margen superior los costados sera automatico*/
+
+        }
+
+        #menu ul li {/*Se aplcara estilos en el id menu en los elemento ul y il */
+            width: 100%;/*Se aplicara un ancho de al elemento*/
+            line-height: 52px;/*Se aplicara un tamaño en la linea de texto */
+        }
+
+        #menu ul li a {/*Se aplicaran estilos en el id menu de los elemnto ul il a */
+            width: 50%;/*Tamaño maximo a lo ancho */
+            line-height: 20px;/*Tamaño de lines de texto*/
+        }
+
+
+
+        #banner h1 {/*Se aplicaran estilos en el id del banner en elemento h1*/
+            font-size: 30px;/*Se aplicaran estilos en el tamaño maximo de la letra*/
+
+        }
+
+        .card .icon {/*Se aplicarn estilos a la clase card y la calse icon */
+            font-size: 35px;/*Se aplicara un ajuste en el tamaño de la letra*/
+        }
+
+        .card:hover .icon {/*Se aplicara estilos en la calse card con efecto hover en la clase icon */
+            font-size: 35px;/*alpasar el cursor elelemnto sera de un tamño de 35px*/
+        }
+
+        .card .category {/*Se aplicara un estilo en la calse card de la clase category*/
+            font-size: 13px;/*Se aplicara u atamaño de 13px */
+        }
+
+        #logo {/*Se aplica el estilos al id logo */
+            float: left;/*Se enviara con efecto flotante al costado izquierdo de la web */
+            margin-bottom: 12px;/*Se aplicara estilos en el margen inferior */
+        }
+
+        #header {/*Se aplicaran estilos al id header*/
+
+            width: 100%;/*se ajustael tamaño maximo a lo ancho del elemento */
+            height: 160px;/*Se aolicara tamaño a lo largo del elemento*/
+            padding-top: 10px;/*Se alicara un margen superior de 10px*/
+        }
+
+    }
+
+           @media (max-width: 599px) {/*Se aplicarane estilos para pantalla hasta maximo 599*/
+            
+            
+            #banner h1{/*Se aplicaran estilos al id banner */
+                font-size: 20px;/*Se ajustar el tamaño de la letra */
+            }
+            #articles .data {/*Se aplicaran estilos a los id articles de la clase data*/
+                float:none; /*el efecto flotante sera nulo*/
+                margin: -10px;/*las marfen de los cuatro costados el elemento sera -10px*/
+                border-radius: 0px 0px 0px 0px; /*Los efectos de norde enlas esquinas se eleiminara */
+            }
+
+            #articles article h4 {/*Se aplicarn estilos al id articles del elemnto article en el elemnto h4*/
+                display: block;/*Se manejara ele lemnto como un bloque */
+                font-size: 23px;/*El tamaño dle texo sera el asifganado para que se vea bien en pantalla*/
+                margin: 3px;/*la marge de los cuatro csotados se ajustar a 3px*/
+                margin-top: 20px;/*Tendremo un margen superior de 20px para el emento */
+            }
+
+
+           }
+}

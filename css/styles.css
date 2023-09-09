@@ -532,7 +532,7 @@ aside h3{ /*Indica ques e aplicaran estilos al elmento aide con espesificaciones
 
 /*ARTICULOS*/
 #articles{/*Se indica que se alicaran estilos generales a al id de articulos*/
-    width: 814px;/*Tendra una ancho total de 814px*/
+    width: 812px;/*Tendra una ancho total de 814px*/
     float: right;/*Se flotara al lado derecho de la pagina*/
     margin: auto;/*tendra un margen automatico en los 4 costados del elemento */
     margin-right: 76px;/*El costado derech se aplicara unmargen de 76px para centtra los articulos dentro de la web*/
